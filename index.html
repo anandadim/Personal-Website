@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/outputStyle.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col gap-20 justify-between h-screen">
+      <header class="flex justify-between items-center p-8">
+        <div class="font-black text-green-700 text-2xl bg-clip-text">
+          @anandadim
+        </div>
+        <div
+          class="flex gap-8 bg-zinc-500/5 text-zinc-800 px-2 py-2 rounded-full"
+        >
+          <div class="link bg-white text-green-900 py-1 px-4 rounded-full">
+            About
+          </div>
+          <div class="link">Craft</div>
+          <div class="link">Media</div>
+          <div class="link">Product</div>
+        </div>
+        <div class="link bg-white py-1 px-4 rounded-full">Contact</div>
+      </header>
+
+      <section
+        class="max-w-4xl mx-12 lg:m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 relative"
+      >
+        <div class="card col-span-2 relative">
+          <div
+            class="absolute top-4 right-4 flex gap-3 items-center bg-emerald-100 border-[1px] rounded-full p-2 w-fit py-1"
+          >
+            <div
+              class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"
+            ></div>
+            <div class="text-sm">Open for Opportunity</div>
+          </div>
+          <img src="public/avatar.png" class="w-20 h-20 rounded-full" alt="" />
+          <div>Dimas Ananda</div>
+          <div class="text-xs">Android Developer</div>
+          <div class="flex gap-2 items-baseline">
+            <h1 id="heading"></h1>
+          </div>
+        </div>
+        <div class="card flex justify-center items-center">
+          <img src="./public/spotify.svg" class="w-[100px] h-[100px]" />
+        </div>
+        <div
+          class="card relative bg-green-400 flex justify-center items-center rounded-3xl"
+        >
+          <div class="text-white font-bold tracking-tighter">
+            Design stripe mockups
+          </div>
+          <a href="https://designstripe.com/mockups" target="_blank">
+            <div
+              class="p-4 rounded-full absolute bottom-4 left-4 bg-white hover:text-center hover:text-yellow-400 cursor-pointer duration-300 ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg></div
+          ></a>
+        </div>
+        <div class="card lg:col-span-2 bg-white h-72 p-12 rounded-3xl">
+          <div class="space-y-3">
+            <h3 class="text-black/80 tracking-tight">Collaboration?</h3>
+            <p class="text-black/60 tracking-tight text-xs">
+              I have a strong track record of developing impactful products.
+              Let's work together!
+            </p>
+            <input
+              id="form"
+              class="w-48 tracking-tight text-black/80 text-2xl focus:outline-none py-3 placeholder:text-black/20 border-b-[1px] font-medium bg-transparent border-slate-500"
+            />
+          </div>
+        </div>
+        <div class="card lg:col-span-3 bg-white h-72 p-12 rounded-3xl">
+          <div class="space-y-3">
+            <h2 class="text-black/80 tracking-tight text-center">Summary</h2>
+            <p class="text-black/60 tracking-tight text-xs">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              fugit qui voluptatum, debitis delectus nesciunt molestias harum,
+              veniam mollitia voluptatibus expedita unde odio assumenda facilis
+              eum molestiae? Cum, eos magnam? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Molestias, eveniet similique.
+              Nostrum, labore harum? Odit vero id, consectetur consequuntur
+              distinctio laborum, neque, enim dicta ea molestias exercitationem
+              reprehenderit fugiat aperiam.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center p-8">
+        <p class="bg-white py-1 px-4 rounded-full">Inspired by Devscale</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
